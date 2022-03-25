@@ -639,7 +639,7 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
-	this.actionFrames = [0,15,39,63,87];
+	this.actionFrames = [0,1,15,16,39,40,63,87];
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
@@ -695,6 +695,19 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndStop(1);
 		});
 	}
+	this.frame_1 = function() {
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
+	}
 	this.frame_15 = function() {
 		var _this = this;
 		/*
@@ -702,6 +715,30 @@ if (reversed == null) { reversed = false; }
 		Stops the specified movie clip or video.
 		*/
 		_this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
+	}
+	this.frame_16 = function() {
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
 	}
 	this.frame_39 = function() {
 		var _this = this;
@@ -710,6 +747,30 @@ if (reversed == null) { reversed = false; }
 		Stops the specified movie clip or video.
 		*/
 		_this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
+	}
+	this.frame_40 = function() {
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
 	}
 	this.frame_63 = function() {
 		var _this = this;
@@ -732,6 +793,17 @@ if (reversed == null) { reversed = false; }
 		    this.cube_btn.addEventListener("click", fl_ClickToGoToCubePage);
 		    this.started = true;
 		}
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
 	}
 	this.frame_87 = function() {
 		var _this = this;
@@ -749,9 +821,20 @@ if (reversed == null) { reversed = false; }
 			this.resume_link.addEventListener("click", fl_ClickToGoToWebPage);
 			this.started2 = true;
 		}
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.home_btn.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop(1);
+		});
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(15).call(this.frame_15).wait(24).call(this.frame_39).wait(24).call(this.frame_63).wait(24).call(this.frame_87).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(14).call(this.frame_15).wait(1).call(this.frame_16).wait(23).call(this.frame_39).wait(1).call(this.frame_40).wait(23).call(this.frame_63).wait(24).call(this.frame_87).wait(10));
 	// buttons
 	this.games_btn = new lib.GamesButton();
 	this.games_btn.name = "games_btn";
@@ -781,10 +864,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(97));
 	// _d_page
 	this.instance = new lib._3dpage("synched",0);
-	this.instance.setTransform(800.45,448.25,1.369,1.369,0,0,0,604.3,353.7);
+	this.instance.setTransform(800.45,448.35,1.369,1.369,0,0,0,604.3,353.7);
 	this.instance.alpha = 0;
 	this.instance._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1).to({regX:430,regY:384,scaleX:1.3691,scaleY:1.3691,x:561.85,y:489.7,alpha:0.0714},0).wait(1).to({alpha:0.1429},0).wait(1).to({alpha:0.2143},0).wait(1).to({alpha:0.2857},0).wait(1).to({alpha:0.3571},0).wait(1).to({alpha:0.4286},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.5714},0).wait(1).to({alpha:0.6429},0).wait(1).to({alpha:0.7143},0).wait(1).to({alpha:0.7857},0).wait(1).to({alpha:0.8571},0).wait(1).to({alpha:0.9286},0).wait(1).to({alpha:1},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.125},0).wait(1).to({alpha:0},0).to({_off:true},1).wait(73));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1).to({regX:430,regY:384,scaleX:1.3691,scaleY:1.3691,x:561.85,y:489.8,alpha:0.0714},0).wait(1).to({alpha:0.1429},0).wait(1).to({alpha:0.2143},0).wait(1).to({alpha:0.2857},0).wait(1).to({alpha:0.3571},0).wait(1).to({alpha:0.4286},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.5714},0).wait(1).to({alpha:0.6429},0).wait(1).to({alpha:0.7143},0).wait(1).to({alpha:0.7857},0).wait(1).to({alpha:0.8571},0).wait(1).to({alpha:0.9286},0).wait(1).to({alpha:1},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.125},0).wait(1).to({alpha:0},0).to({_off:true},1).wait(73));
 	// twoD
 	this.instance_1 = new lib._2d("synched",0);
 	this.instance_1.setTransform(199.5,385.15,1.0862,1.0862,0,0,0,1276.5,359.8);
@@ -835,7 +918,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
 p.nominalBounds = rect = new cjs.Rectangle(376.5,370,1404.6,790);
-p.frameBounds = [rect, new cjs.Rectangle(138.1,348,1871.5,1051.4), rect=new cjs.Rectangle(138.1,348.1,1871.5,1051.4), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790), new cjs.Rectangle(-675.1,368.6,2780.7,834.2), rect=new cjs.Rectangle(-675,368.6,2780.6,834.2), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790), rect=new cjs.Rectangle(-123.5,294.8,1941.8,1094.1), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790), rect=new cjs.Rectangle(27.3,206.3,1936.5,1120.4), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790)];
+p.frameBounds = [rect, new cjs.Rectangle(138.1,348.1,1871.5,1051.4), rect=new cjs.Rectangle(138.1,348.2,1871.5,1051.4), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790), new cjs.Rectangle(-675.1,368.6,2780.7,834.2), rect=new cjs.Rectangle(-675,368.6,2780.6,834.2), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790), rect=new cjs.Rectangle(-123.5,294.8,1941.8,1094.1), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790), rect=new cjs.Rectangle(27.3,206.3,1936.5,1120.4), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, new cjs.Rectangle(376.5,370,1404.6,790)];
 // library properties:
 lib.properties = {
 	id: 'D60AE98E0D62484C899C97BF651F965E',
